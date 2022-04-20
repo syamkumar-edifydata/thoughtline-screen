@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+// Your variable overrides
+// $body-bg: #000;
+// $body-color: #111;
+$primary:#0A9A73;
+$dark:#071C1F;
+$muted:#A0A0A0;
+
+// Option A: Include all of Bootstrap
+
+body{
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+
+}
+.form-control{
+    border-radius: 0px !important;
+}
+.btn-custome{
+    border-radius: 0 !important;
+    padding: 17px 35px !important;
+    transition: .3s all;
+    &:hover{
+        background: $dark !important;
+    }
+}
+.pull-right{
+    float: right;
+}
+.gap-1{
+    gap: .25rem;
+}
+.gap-2{
+    gap: .5rem;
+}
+.gap-3{
+    gap: .75rem;
+}
+.gap-4{
+    gap: 1rem;
+}
+.inline-flex{
+    display: inline-flex
+}
+.index:hover
+{
+    color: $dark;
+
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute
+}
+.table-filter{
+min-width: 200px;
+left: -100px !important;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
